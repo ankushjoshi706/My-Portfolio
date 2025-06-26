@@ -17,7 +17,7 @@
   },
   {
     "title": "Spotify-Clone",
-    "imageSrc": "./public/assets/hero/smile-boy.jpg/assets/projects/spotify.png",
+    "imageSrc": "public/assets/projects/spotify.png",
     "description": "A simple  web application for browsing restaurant menus. The app showcases a modern UI with categorized food items, a navigation drawer, and a clean layout ideal for learning web app design using HTML, CSS.  It’s primarily a frontend project without backend integration.",
     "skills": ["HTML", "CSS"],
     "demo": "https://ankushjoshi706.github.io/Spotify-Clone/",
