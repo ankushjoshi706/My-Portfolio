@@ -26,7 +26,7 @@ export const Contact = () => {
             </li>
           
              <li className={styles.link}>
-                <img src="./assets/contact/phone.png" alt="Github Icon" />
+                <img src="./assets/contact/phone (2).png" alt="Github Icon" />
                 <a href="#">+91-9660209413</a>
             </li>
         </ul>
