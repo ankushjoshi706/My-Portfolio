@@ -27,7 +27,7 @@ export const Contact = () => {
           
              <li className={styles.link}>
                 <img src="./assets/contact/phone1.png" alt="phone Icon" />
-                <a href="#">+91-9660209413</a>
+                <a href="tel:+919660209413">+91-9660209413</a>
             </li>
         </ul>
     </footer>
