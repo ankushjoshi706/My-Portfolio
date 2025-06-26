@@ -1,0 +1,139 @@
+@import "../../vars.css";
+
+.container {
+    color: var(--color-text);
+    margin-top: 99px;
+    margin-left: 10%;
+    margin-right: 10%;
+    perspective: 1000px; /* Enables 3D space */
+    overflow: hidden;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+
+.skillcontainer2{
+    width: 200px;
+    margin-left: 300px;
+    margin-right: 10px;
+   
+}
+
+.skillcontainerImage1{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    filter: drop-shadow(10px 7px 10px rgb(240, 185, 4));
+    margin-top: 10px;
+}
+.skills {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+/* Pause on hover
+@media (hover: hover) and (pointer: fine) {
+    .skills:hover {
+        animation-play-state: paused;
+    }
+} */
+
+.skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+}
+
+.skillImageContainer {
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill p {
+    font-size: 18px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* Rotate animation */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 830px) {
+    
+     .content{
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+        width: 90%;
+    }
+    .title{
+        display: flex;
+    }
+    .skills {
+        width: 200px;
+        height: 200px;
+        animation-duration: 25s; /* Slower rotation for smaller screens */
+    }
+
+    .skillImageContainer {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill p {
+        font-size: 14px;
+    }
+    .skillcontainer2{
+        display: none;
+    }
+    
+}
